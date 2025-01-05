@@ -14,7 +14,7 @@
             <ul>
             <?php 
                 foreach($data["species"]->people as $person){
-                    echo "<li><a onclick=\"getContent('/character/" . $person->id . "');\"> " .$person->name."</a></li>";
+                    echo "<li><a onclick=\"getContent('" . $data["page"]["baseURL"] . '/character/' . $person->id . "');\"> " .$person->name."</a></li>";
                 }
             ?>
             </ul>
@@ -24,7 +24,7 @@
             <ul>
                 <?php 
                     foreach($data["species"]->films as $film){
-                        echo "<li><a href=\"/film/" . $film->id . "\"> " .$film->title."</a></li>";
+                        echo "<li><a href=\"". $data["page"]["baseURL"] . "/film/" . $film->id . "\"> " .$film->title."</a></li>";
                     }
                 ?>
             </ul>

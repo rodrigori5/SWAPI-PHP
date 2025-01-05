@@ -13,7 +13,7 @@
             <ul>
             <?php 
                 foreach($data["planet"]->residents as $resident){
-                    echo "<li><a onclick=\"getContent('/character/" . $resident->id . "');\"> " .$resident->name."</a></li>";
+                    echo "<li><a onclick=\"getContent('" . $data["page"]["baseURL"] . '/character/' . $resident->id . "');\"> " .$resident->name."</a></li>";
                 }
             ?>
             </ul>
@@ -22,7 +22,7 @@
             <ul>
                 <?php 
                     foreach($data["planet"]->films as $film){
-                        echo "<li><a href=\"/film/" . $film->id . "\"> " .$film->title."</a></li>";
+                        echo "<li><a href=\"" . $data["page"]["baseURL"] . "/film/" . $film->id . "\"> " .$film->title."</a></li>";
                     }
                 ?>
             </ul>

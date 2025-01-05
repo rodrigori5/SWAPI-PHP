@@ -17,7 +17,7 @@
             <ul>
                 <?php 
                     foreach($data["starship"]->films as $film){
-                        echo "<li><a href=\"/film/" . $film->id . "\"> " .$film->title."</a></li>";
+                        echo "<li><a href=\"" . $data["page"]["baseURL"] . "/film/" . $film->id . "\"> " .$film->title."</a></li>";
                     }
                 ?>
             </ul>
@@ -26,7 +26,7 @@
             <ul>
             <?php 
                 foreach($data["starship"]->pilots as $pilot){
-                    echo "<li><a onclick=\"getContent('/character/" . $pilot->id . "');\"> " .$pilot->name."</a></li>";
+                    echo "<li><a onclick=\"getContent('" . $data["page"]["baseURL"] . '/character/' . $pilot->id . "');\"> " .$pilot->name."</a></li>";
                 }
             ?>
             </ul>
