@@ -55,7 +55,8 @@ Card style credits: https://bootsnipp.com/snippets/z8PZx
 .movie-card:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
-  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+  cursor: pointer;
 }
 
 .movie-content {

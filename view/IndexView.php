@@ -15,7 +15,7 @@
                     <div class="movie-header poster" style="background: url('<?php echo $data["page"]["baseURL"] . "/vendor/img/poster/" . $i . ".jpg"; ?>') 100% center;">
                         <div class="header-icon-container">
                             <a href="#">
-                                <i class="material-icons header-icon"></i>
+                                <i class="material-icons header-icon"></i>
                             </a>
                         </div>
                     </div>
