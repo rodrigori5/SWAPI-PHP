@@ -13,7 +13,7 @@
             <ul>
                 <?php 
                     foreach($data["character"]->films as $film){
-                        echo "<li><a href=\"/film/" . $film->id . "\"> " .$film->title."</a></li>";
+                        echo "<li><a href=\"" . $data["page"]["baseURL"]  ."/film/" . $film->id . "\"> " .$film->title."</a></li>";
                     }
                 ?>
             </ul>
@@ -22,7 +22,7 @@
             <ul>
             <?php 
                 foreach($data["character"]->species as $species){
-                    echo "<li><a onclick=\"getContent('/species/" . $species->id ."');\"> " .$species->name."</a></li>";
+                    echo "<li><a onclick=\"getContent('" . $data["page"]["baseURL"] . '/species/' . $species->id ."');\"> " .$species->name."</a></li>";
                 }
             ?>
             </ul>
@@ -31,7 +31,7 @@
             <ul>
             <?php 
                 foreach($data["character"]->starships as $starship){
-                    echo "<li><a onclick=\"getContent('/starship/" . $starship->id . "');\"> " .$starship->name."</a></li>";
+                    echo "<li><a onclick=\"getContent('" . $data["page"]["baseURL"] . '/starship/' . $starship->id . "');\"> " .$starship->name."</a></li>";
                 }
             ?>
             </ul>
@@ -40,7 +40,7 @@
             <ul>
             <?php 
                 foreach($data["character"]->vehicles as $vehicle){
-                    echo "<li><a onclick=\"getContent('/vehicle/" . $vehicle->id . "');\"> " .$vehicle->name."</a></li>";
+                    echo "<li><a onclick=\"getContent('" . $data["page"]["baseURL"] . '/vehicle/' . $vehicle->id . "');\"> " .$vehicle->name."</a></li>";
                 }
             ?>
             </ul>
