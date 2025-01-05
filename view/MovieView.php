@@ -34,7 +34,7 @@ function getCharImage($name, $baseURL){
                         if($i != 0){
                             echo ", ";
                         }
-                        echo "<a onclick=\"loadContent('/species/" . $species->id . "')\">" .$species->name."</a>";
+                        echo "<a onclick=\"loadContent('" . $data["page"]["baseURL"] . '/species/' . $species->id . "')\">" .$species->name."</a>";
                         $i++;
                     }
                 ?>
@@ -45,7 +45,7 @@ function getCharImage($name, $baseURL){
                     if($i != 0){
                         echo ", ";
                     }
-                    echo "<a onclick=\"loadContent('/starship/" . $starship->id . "')\">" .$starship->name."</a>";
+                    echo "<a onclick=\"loadContent('" . $data["page"]["baseURL"] . '/starship/' . $starship->id . "')\">" .$starship->name."</a>";
                     $i++;
                 }
             ?>
@@ -57,7 +57,7 @@ function getCharImage($name, $baseURL){
                     if($i != 0){
                         echo ", ";
                     }
-                    echo "<a onclick=\"loadContent('/vehicle/" . $vehicle->id . "')\">" .$vehicle->name."</a>";
+                    echo "<a onclick=\"loadContent('" . $data["page"]["baseURL"] . '/vehicle/' . $vehicle->id . "')\">" .$vehicle->name."</a>";
                     $i++;
                 }
             ?>
@@ -100,7 +100,7 @@ function getCharImage($name, $baseURL){
                     if($i != 0){
                         echo ", ";
                     }
-                    echo "<a onclick=\"loadContent('/planet/" . $planet->id . "')\">" .$planet->name."</a>";
+                    echo "<a onclick=\"loadContent('" . $data["page"]["baseURL"] . '/planet/' . $planet->id . "')\">" .$planet->name."</a>";
                     $i++;
                 }
             ?>
