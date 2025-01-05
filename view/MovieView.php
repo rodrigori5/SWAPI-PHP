@@ -84,7 +84,7 @@ function getCharImage($name, $baseURL){
                         if($charsWithNoImageList != ""){
                             $charsWithNoImageList .= ", ";
                         }
-                        $charsWithNoImageList .= "\n<a onclick=\"loadContent('/character/" . $character->id . "')\">" .$character->name."</a>";
+                        $charsWithNoImageList .= "\n<a onclick=\"loadContent('" . $data["page"]["baseURL"] . '/character/' . $character->id . "')\">" .$character->name."</a>";
                     }
                 }
             ?>
