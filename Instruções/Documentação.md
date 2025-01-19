@@ -27,28 +27,19 @@ https://swapi.py4e.com/api/
 			"producer": "Gary Kurtz, Rick McCallum",
 			"release_date": "1977-05-25",
 			"characters": [
-				"https://swapi.py4e.com/api/people/1/",
-				
-				
+				"https://swapi.py4e.com/api/people/1/"
 			],
 			"planets": [
-				"https://swapi.py4e.com/api/planets/1/",
-				
+				"https://swapi.py4e.com/api/planets/1/"
 			],
 			"starships": [
-				"https://swapi.py4e.com/api/starships/2/",
-				
-				
+				"https://swapi.py4e.com/api/starships/2/"
 			],
 			"vehicles": [
-				"https://swapi.py4e.com/api/vehicles/4/",
-				
-				
+				"https://swapi.py4e.com/api/vehicles/4/"
 			],
 			"species": [
-				"https://swapi.py4e.com/api/species/1/",
-				
-				
+				"https://swapi.py4e.com/api/species/1/"
 			],
 			"created": "2014-12-10T14:23:31.880000Z",
 			"edited": "2014-12-20T19:49:45.256000Z",
@@ -63,37 +54,27 @@ https://swapi.py4e.com/api/
 			"release_date": "1980-05-17",
 			"characters": [
 				"https://swapi.py4e.com/api/people/1/",
-				
-				
+
 			],
 			"planets": [
-				"https://swapi.py4e.com/api/planets/4/",
-				
-				
+				"https://swapi.py4e.com/api/planets/4/"
 			],
 			"starships": [
-				"https://swapi.py4e.com/api/starships/3/",
-				
+				"https://swapi.py4e.com/api/starships/3/"
 				
 			],
 			"vehicles": [
-				"https://swapi.py4e.com/api/vehicles/8/",
-				
-			
+				"https://swapi.py4e.com/api/vehicles/8/"
 			],
 			"species": [
-				"https://swapi.py4e.com/api/species/1/",
-				
+				"https://swapi.py4e.com/api/species/1/"
 			],
 			"created": "2014-12-12T11:26:24.656000Z",
 			"edited": "2014-12-15T13:07:53.386000Z",
 			"url": "https://swapi.py4e.com/api/films/2/"
-		},
-        {
-            ...outros filmes e assim por diante
-        }
-    ]
- }
+		}
+	]
+}
 #### Lista o filme se clicar no filme 
 - **URL**: https://swapi.py4e.com/api/films/{Número do filme especificado}
 **URL na aplicação**: /SWAPI-PHP/film/{Número do filme especificado}
