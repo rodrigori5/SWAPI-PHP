@@ -1,0 +1,5 @@
+- Endpoints para enviar requisições otimizados.
+- Pasta logs com o detalhamento de todas as requisições enviadas a API.
+- Refatoração do código para buscar as informações corretamente.
+- Correção da url base da API.
+- Novo layout das paginas.
