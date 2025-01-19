@@ -75,6 +75,8 @@ https://swapi.py4e.com/api/
 		}
 	]
 }
+```
+
 #### Lista o filme se clicar no filme 
 - **URL**: https://swapi.py4e.com/api/films/{Número do filme especificado}
 **URL na aplicação**: /SWAPI-PHP/film/{Número do filme especificado}
@@ -113,6 +115,8 @@ https://swapi.py4e.com/api/
 	"edited": "2014-12-20T19:49:45.256000Z",
 	"url": "https://swapi.py4e.com/api/films/1/"
 }
+
+```
 ### PlanetsEndpoint
 #### Lista o planeta se clicar no planeta 
 - **URL**: https://swapi.py4e.com/api/films/{Número do planeta especificado}
@@ -139,6 +143,7 @@ https://swapi.py4e.com/api/
 	"edited": "2014-12-20T20:58:18.421000Z",
 	"url": "https://swapi.py4e.com/api/planets/3/"
 }
+```
 
 ### CharactersEndpoint
 #### Lista o personagem se clicar no personagem 
@@ -175,6 +180,7 @@ https://swapi.py4e.com/api/
 	"url": "https://swapi.py4e.com/api/people/1/"
 }
 
+```
 ### SpeciesEndpoint
 #### Lista a espécie se clicar na espécie 
 - **URL**: https://swapi.py4e.com/api/species/{Número da espécie especificada}
@@ -205,6 +211,7 @@ https://swapi.py4e.com/api/
 	"edited": "2014-12-20T21:36:42.136000Z",
 	"url": "https://swapi.py4e.com/api/species/1/"
 }
+```
 
 ### StarshipsEndpoint
 #### Lista a nave se clicar na nave 
@@ -236,6 +243,7 @@ https://swapi.py4e.com/api/
 	"edited": "2014-12-20T21:26:24.783000Z",
 	"url": "https://swapi.py4e.com/api/starships/9/"
 }
+```
 
 ### VehiclesEndPoint
 #### Lista o veículo se clicar no veículo 
