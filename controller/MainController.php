@@ -1,6 +1,7 @@
 <?php
 require_once dirname(__DIR__, 1) . '/vendor/autoload.php';
 require_once dirname(__DIR__, 1) . '/view/View.php';
+
 use SWAPI\SWAPI;
 
 class MainController
@@ -60,6 +61,8 @@ class MainController
         }
         $data["page"] = $this->pageData;
         $this->pageData["pageTitle"] = "Home";
+        $this->swapi->films()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
+
 
         $view = new View('inc/header', $this->pageData);
         $view = new View('IndexView', $data);
@@ -90,6 +93,7 @@ class MainController
             
             $header = new View('inc/header', $this->pageData);
             $view = new View('MovieView', $data);
+            $this->swapi->films()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
         } catch (GuzzleHttp\Exception\ClientException $exception) {
             $this->throw404();
         }
@@ -111,6 +115,7 @@ class MainController
 
             $header = new View('inc/contentHeader', $this->pageData);
             $view = new View('PlanetView', $data);
+            $this->swapi->planets()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
         } catch (GuzzleHttp\Exception\ClientException $exception) {
             $this->throw404();
         }
@@ -140,6 +145,7 @@ class MainController
 
             $header = new View('inc/contentHeader', $this->pageData);
             $view = new View('CharacterView', $data);
+            $this->swapi->characters()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
         } catch (GuzzleHttp\Exception\ClientException $exception) {
             $this->throw404();
         }
@@ -161,6 +167,7 @@ class MainController
 
             $header = new View('inc/contentHeader', $this->pageData);
             $view = new View('VehicleView', $data);
+            $this->swapi->vehicles()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
         } catch (GuzzleHttp\Exception\ClientException $exception) {
             $this->throw404();
         }
@@ -187,6 +194,7 @@ class MainController
 
             $header = new View('inc/contentHeader', $this->pageData);
             $view = new View('SpeciesView', $data);
+            $this->swapi->species()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
         } catch (GuzzleHttp\Exception\ClientException $exception) {
             $this->throw404();
         }
@@ -208,6 +216,7 @@ class MainController
 
             $header = new View('inc/contentHeader', $this->pageData);
             $view = new View('StarshipView', $data);
+            $this->swapi->starships()->logRequest($_SERVER['REQUEST_METHOD'],$_SERVER['REQUEST_URI'] ); // Log the request
         } catch (GuzzleHttp\Exception\ClientException $exception) {
             $this->throw404();
         }

@@ -8,6 +8,9 @@ use GuzzleHttp\Message\Request;
 use Psr\Log\LoggerInterface;
 use JsonMapper;
 use SWAPI\Models\Collection;
+use logClass\RequestLogger;
+
+require_once('vendor\rmasters\swapi\src\logClass\RequestLogger.php');
 
 class Endpoint
 {
@@ -27,6 +30,17 @@ class Endpoint
         $this->mapper = $mapper;
     }
 
+    public function logRequest($requestType, $requestUrl)
+{
+    // Initialize the logger
+    $this->logger = new RequestLogger('logs\requests.log');
+
+    // Log the request
+    $this->logger->info('Request received:  type: "{type}" request to url: "{url}"', [
+        'type' => $requestType,
+        'url' => $requestUrl,
+    ]);
+}
     public function setClient(Client $http)
     {
         $this->http = $http;
