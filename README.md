@@ -1,2 +1,2 @@
 # SWAPI-PHP
-Simple web-application for showing Star Wars movies information by using the SWAPI through swapi-php originally developed by Ross Masters, here used with a few changes and additions.
+Aplicação web simples para mostrar informações de filmes de Star Wars usando o SWAPI através do swapi-php desenvolvido por Ross Masters, usado aqui com algumas alterações e adições.
